@@ -34,4 +34,4 @@ lines(power$DateTime,power$Sub_metering_2,type="l",col="red")
 lines(power$DateTime,power$Sub_metering_3,type="l",col="blue")
 legend("topright", lty=1,bty = "n", col = c("black","red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"))
 with(power,plot(DateTime,Global_reactive_power,type="l", xlab="datetime",ylab="Global_reactive_power"))
-dev.off()
+dev.off()   #Writing to PNG file

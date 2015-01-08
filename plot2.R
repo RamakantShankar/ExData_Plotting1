@@ -27,4 +27,4 @@ for(i in 3:8){power[,i] <- as.numeric(as.character(power[,i]))}
 # Creating png file for plot
 png(filename="plot2.png",height=480,width=480)
 with(power,plot(DateTime,Global_active_power,type="l", xlab="",ylab="Global Active Power (kilowatts)"))
-dev.off()
+dev.off()  #Writing to PNG file

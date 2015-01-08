@@ -25,6 +25,6 @@ power$DateTime <- strptime (power$DateTime,"%d/%m/%Y %H:%M:%S")
 for(i in 3:8){power[,i] <- as.numeric(as.character(power[,i]))}
 
 # Creating png file for plot
-png(filename="plot1.png",height=480,width=480)
+png(filename="plot1.png",height=480,width=480) 
 hist(power$Global_active_power,col="firebrick1",main="Global Active Power",xlab="Global Active Power (kilowatts)")
-dev.off()
+dev.off()	#Writing to PNG file
